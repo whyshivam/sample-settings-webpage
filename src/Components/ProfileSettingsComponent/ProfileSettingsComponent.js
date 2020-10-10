@@ -16,7 +16,7 @@ const ProfileSettings = () => {
   return (
     <>
       <Form
-        labelCol={{ span: 4 }}
+        labelCol={{ span: 10 }}
         wrapperCol={{ span: 14 }}
         layout="horizontal"
         form={form}

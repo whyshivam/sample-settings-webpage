@@ -9,8 +9,8 @@ const {  Content, Header, Sider, Footer } = Layout;
 class Home extends Component {
     render() {
         return (
-          <Layout>
-            <Header>
+          <Layout className="home-main"  >
+            <Header className="home-main-header">
               <NavBar />
             </Header>
             <Content className="home-main-content">

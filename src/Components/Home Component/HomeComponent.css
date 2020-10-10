@@ -1,15 +1,29 @@
 @import '../../../node_modules/antd/dist/antd.css';
+.home-main{
+    height: 100vh;
+}
 
 .home-main-content{
-    padding: 10px 50px;
+    padding-top: 20px;
+    align-self: center;
+    display: flex;
+    width: 800px;
 }
 .home-main-content-layout {
   background: #f9f9f9;
+  display: flex;
 }
 .home-layout-sider-left{
     width: 200px;
+    
 }
 .home-layout-sider-right{ 
     padding: 10px 24px;
     min-height: 280px ;
+}
+@media only screen and (max-width: 800px ) {
+    .home-main-content{
+    padding-top: 0px;
+        width: 100%;
+    }
 }
