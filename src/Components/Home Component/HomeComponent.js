@@ -3,7 +3,7 @@ import { Layout } from 'antd';
 import './HomeComponent.css';
 import NavBar from '../NavBarComponent/NavBarComponent';
 import SideMenu from '../SideMenuComponent/SideMenuComponent';
-
+import ProfileSettings from "../ProfileSettingsComponent/ProfileSettingsComponent";
 const {  Content, Header, Sider, Footer } = Layout;
 class Home extends Component {
     render() {
@@ -19,7 +19,7 @@ class Home extends Component {
                   <SideMenu />
                 </Sider>
                 <Content className="home-layout-sider-right">
-                    Hello
+                    <ProfileSettings />
                 </Content>
               </Layout>
             </Content>

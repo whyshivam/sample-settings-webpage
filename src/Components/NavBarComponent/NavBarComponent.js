@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 import {Menu} from 'antd';
+import './NavBarComponent.css';
 class NavBar extends Component {
     render(){
         return (
-          <div className="header">
-            <div className="logo" />
+          <div className="navbar-header">
+            <div className="navbar-logo" />
             <Menu theme="dark" mode="horizontal" defaultSelectedKeys={["2"]}>
               <Menu.Item key="1">nav 1</Menu.Item>
               <Menu.Item key="2">nav 2</Menu.Item>
