@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { Layout } from 'antd';
 import './HomeComponent.css';
+import { BrowserRouter as Router } from "react-router-dom";
 import NavBar from '../NavBarComponent/NavBarComponent';
 import SideMenu from '../SideMenuComponent/SideMenuComponent';
-import ProfileSettings from "../ProfileSettingsComponent/ProfileSettingsComponent";
+import SettingsContent from "../SettingsContentComponent/SettingsContentComponent";
 const {  Content, Header, Sider, Footer } = Layout;
 class Home extends Component {
     render() {
@@ -14,16 +15,17 @@ class Home extends Component {
             </Header>
             <Content className="home-main-content">
               <Layout className="home-main-content-layout">
-
-                <Sider className="home-layout-sider-left">
-                  <SideMenu />
-                </Sider>
-                <Content className="home-layout-sider-right">
-                    <ProfileSettings />
-                </Content>
+                <Router>
+                  <Sider className="home-layout-sider-left">
+                    <SideMenu />
+                  </Sider>
+                  <Content className="home-layout-sider-right">
+                    <SettingsContent />
+                  </Content>
+                </Router>
               </Layout>
             </Content>
-            <Footer>Ant Design ©2018 Created by Ant UED</Footer>
+            <Footer></Footer>
           </Layout>
         );
     }

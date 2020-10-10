@@ -1,31 +1,34 @@
 import React, { Component } from 'react';
-import {  Route, Switch, Redirect } from "react-router-dom";
-import { PrivateRoute } from "../PrivateRoute";
-
+import {
+  Switch,
+  Route,
+  Redirect
+} from "react-router-dom";
+import ProfileSettings from '../ProfileSettingsComponent/ProfileSettingsComponent';
+import ChangePassword from '../ChangePasswordComponent/ChangePasswordComponent';
 class SettingsContent extends Component{
     render(){
         return (
-          
             <Switch>
-              <PrivateRoute
+              <Route exact path="/settings" component={ProfileSettings} />
+              <Route
                 exact
-                path="/home/meeting/:id"
-                component={}
+                path="/settings/change-password/"
+                component={ChangePassword}
               />
-              <PrivateRoute
+              <Route
                 exact
-                path="/home/profile/"
-                component={}
+                path="/settings/email-sms"
+                component={ProfileSettings}
               />
-              <PrivateRoute
+              <Route
                 exact
-                path="/home/"
-                component={}
+                path="/settings/notification"
+                component={ProfileSettings}
               />
+              <Redirect to="/settings/" />
             </Switch>
-          
         );
     }
 }
-
-export default SettingsContent;
+export default (SettingsContent);
