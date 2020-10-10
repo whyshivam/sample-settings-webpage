@@ -1,5 +1,4 @@
 @import '../../../node_modules/antd/dist/antd.css';
-
 .logo {
   width: 120px;
   height: 31px;
@@ -7,7 +6,16 @@
   margin: 16px 28px 16px 0;
   float: left;
 }
-
-.site-layout-background {
-  background: #fff;
+.home-main-content{
+    padding: 10px 50px;
+}
+.home-main-content-layout {
+  background: #f9f9f9;
+}
+.home-layout-sider-left{
+    width: 200px;
+}
+.home-layout-sider-right{ 
+    padding: 10px 24px;
+    min-height: 280px ;
 }

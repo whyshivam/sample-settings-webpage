@@ -12,18 +12,15 @@ class Home extends Component {
             <Header>
               <NavBar />
             </Header>
-            <Content style={{ padding: "0 50px" }}>
-              <Layout
-                className="site-layout-background"
-                style={{ padding: "24px 0" }}
-              >
-                <Sider className="site-layout-background" width={200}>
+            <Content className="home-main-content">
+              <Layout className="home-main-content-layout">
+
+                <Sider className="home-layout-sider-left">
                   <SideMenu />
                 </Sider>
-
-                <Content
-                  style={{ padding: "0 24px", minHeight: 280 }}
-                ></Content>
+                <Content className="home-layout-sider-right">
+                    Hello
+                </Content>
               </Layout>
             </Content>
             <Footer>Ant Design ©2018 Created by Ant UED</Footer>
